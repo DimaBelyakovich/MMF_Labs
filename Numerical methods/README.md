@@ -1,3 +1,3 @@
--[lab_1 - Gauss method (Single division)](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab1_gauss.m)<br>
--[lab_2 - Square root method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab2.m)<br>
--[lab_3 - Simple iteration method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab3.m)<br>
+- [lab_1 - Gauss method (Single division)](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab1_gauss.m)<br>
+- [lab_2 - Square root method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab2.m)<br>
+- [lab_3 - Simple iteration method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab3.m)<br>

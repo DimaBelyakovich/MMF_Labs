@@ -3,3 +3,4 @@
 - [lab_3 - Simple iteration method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab3.m)<br>
 - [lab_4 - Implied iterative methods](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab4.m)<br>
 - [lab_5 - Danilevsky method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab5.m)<br>
+- [lab_6 - Power iteration](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab6.m)<br>

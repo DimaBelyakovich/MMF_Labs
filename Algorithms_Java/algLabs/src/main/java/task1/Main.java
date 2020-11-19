@@ -15,6 +15,5 @@ public class Main {
             avgTime += Service.calculateTime(matrix)[1];
         }
         System.out.println(avgTime/k);
-        System.out.println(4263718/1000000);
     }
 }

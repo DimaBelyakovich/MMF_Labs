@@ -4,7 +4,7 @@ import helpers.RandomGenerators;
 
 public class Main {
     public static void main(String[] args) {
-        Matrix matrix = new Matrix(RandomGenerators.getRandomInt(5,10000));
+        Matrix matrix = new Matrix(RandomGenerators.getRandomLong(5,10000));
         Service.fillMatrixRandomValue(matrix, 5, 10_000);
         System.out.println(matrix.getN());
         int k = 5;

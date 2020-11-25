@@ -7,7 +7,7 @@ public class Service {
     public static void fillMatrixRandomValue(Matrix matrix, Integer leftBound, Integer rightBound){
         for (Integer i = 0; i < matrix.getN(); i++ ){
             for (Integer j = 0; j < matrix.getN(); j++){
-                matrix.setElement(RandomGenerators.getRandomInt(leftBound, rightBound), i, j);
+                matrix.setElement(RandomGenerators.getRandomLong(leftBound, rightBound), i, j);
             }
         }
     }

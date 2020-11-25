@@ -1,6 +1,6 @@
 package task2;
 
-import helpers.ReadFile;
+import helpers.Reader;
 
 import java.io.File;
 import java.util.Collections;
@@ -10,7 +10,7 @@ import java.util.Map;
 public class Main {
     private static final String path = "/Users/dimabelyakovich/dev/MMF_Labs/Algorithms_Java/algLabs/src/main/resources/lines.txt";
     public static void main(String[] args) {
-        List<String> words = ReadFile.readStringFromFile(new File(path));
+        List<String> words = Reader.readStringFromFile(new File(path));
         Collections.sort(words);
         System.out.println(words);
         Map result = AcceleratedLinearSearch.getSearchWord(words, "tonight");
@@ -19,7 +19,7 @@ public class Main {
             System.out.println("Такого ключа в массиве нет");
             System.out.println(result.get(-1));
         }else {
-            System.out.println(result.get(1));
+            System.out.println("Time: " + result.get(1));
         }
     }
 }

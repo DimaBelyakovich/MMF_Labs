@@ -13,13 +13,17 @@ public class Main {
         List<String> words = Reader.readStringFromFile(new File(path));
         Collections.sort(words);
         System.out.println(words);
-        Map result = AcceleratedLinearSearch.getSearchWord(words, "tonight");
 
-        if(result.containsKey(-1)){
-            System.out.println("Такого ключа в массиве нет");
-            System.out.println(result.get(-1));
-        }else {
-            System.out.println("Time: " + result.get(1));
-        }
+        Map resultTonight = AcceleratedLinearSearch.getSearchWord(words, "tonight");
+        Map resultA = AcceleratedLinearSearch.getSearchWord(words, "a");
+        Map resultMine = AcceleratedLinearSearch.getSearchWord(words, "mine");
+        Map resultSky = AcceleratedLinearSearch.getSearchWord(words, "sky");
+        //Map resultNoWord = AcceleratedLinearSearch.getSearchWord(words, "tonightddddd");
+
+        System.out.println("Time: " + resultA.get(1));
+        System.out.println("Time: " + resultMine.get(1));
+        System.out.println("Time: " + resultSky.get(1));
+        System.out.println("Time: " + resultTonight.get(1));
+        //System.out.println("Time: " + resultNoWord.get(-1));
     }
 }

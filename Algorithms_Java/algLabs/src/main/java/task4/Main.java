@@ -8,29 +8,38 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int n = 206;
+        int n = 1_000_000;
+        int [] listBubbleOpt = new int[n];
         int [] listBubble = new int[n];
         int [] listInsert = new int[n];
 
         for (int i =0; i<n; i++) {
-            listBubble[i] = RandomGenerators.getRandomInt(1, 2132);
-            listInsert[i] = listBubble[i];
+            int r = RandomGenerators.getRandomInt(1, 10_000);
+            listBubble[i] = r;
+            listBubbleOpt[i] = r;
+            listInsert[i] = r;
         }
 
-        System.out.println(Arrays.toString(listBubble));
         long start = System.nanoTime();
-        BubbleSort.bubbleSortOptimized(listBubble);
         long end = System.nanoTime();
-        System.out.println(Arrays.toString(listBubble));
-        System.out.println(end - start);
 
+        System.out.println("Bubble optimized");
+        start = System.nanoTime();
+        BubbleSort.bubbleSortOptimized(listBubbleOpt);
+        end = System.nanoTime();
+        System.out.println("Time: " +(end - start));
 
-        System.out.println(Arrays.toString(listInsert));
+        System.out.println("Bubble");
+        start = System.nanoTime();
+        BubbleSort.bubbleSort(listBubble);
+        end = System.nanoTime();
+        System.out.println("Time: " +(end - start));
+
+        System.out.println("Insertion");
         start = System.nanoTime();
         InsertionSort.insertionSort(listInsert);
         end = System.nanoTime();
-        System.out.println(Arrays.toString(listInsert));
-        System.out.println(end - start);
+        System.out.println("Time: " +(end - start));
 
     }
 }

@@ -4,3 +4,4 @@
 - [lab_4 - Implied iterative methods](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab4.m)<br>
 - [lab_5 - Danilevsky method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab5.m)<br>
 - [lab_6 - Power iteration](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab6.m)<br>
+- [lab_7 - Rotation method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab7.m)<br>

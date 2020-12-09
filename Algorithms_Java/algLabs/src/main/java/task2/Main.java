@@ -18,12 +18,10 @@ public class Main {
         Map resultA = AcceleratedLinearSearch.getSearchWord(words, "a");
         Map resultMine = AcceleratedLinearSearch.getSearchWord(words, "mine");
         Map resultSky = AcceleratedLinearSearch.getSearchWord(words, "sky");
-        //Map resultNoWord = AcceleratedLinearSearch.getSearchWord(words, "tonightddddd");
 
         System.out.println("Time: " + resultA.get(1));
         System.out.println("Time: " + resultMine.get(1));
         System.out.println("Time: " + resultSky.get(1));
         System.out.println("Time: " + resultTonight.get(1));
-        //System.out.println("Time: " + resultNoWord.get(-1));
     }
 }

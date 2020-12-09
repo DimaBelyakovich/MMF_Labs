@@ -29,14 +29,13 @@ public class Main {
                 s.push(current);
                 current = current.right;
             } else {
-                System.out.print(current.idata + " ");
+                System.out.print(current.data + " ");
                 current = null;
             }
 
         }
     }
 
-    // Creates a random tree and prints it like a tree
     public static void main(String[] args)
     {
         TreeNode root = TreeNode.createRandomIntegerTree(14);

@@ -6,24 +6,21 @@ import java.util.*;
 
 public class TreeNode {
 
-    public int idata;
+    public int data;
 
     public TreeNode left;
     public TreeNode right;
     public TreeNode parent;
 
-    // variables needed to print the tree like a tree
     int depth=0;
     int level=0;
     int drawPos=0;
-
-    public static int RANDOM_RANGE = 1000;
 
     public static TreeNode createRandomIntegerTree (int numNodes)
     {
 
         TreeNode root = new TreeNode ();
-        root.idata = RandomGenerators.getRandomInt(0,120);
+        root.data = RandomGenerators.getRandomInt(0,120);
 
         int treeSize = countNodes(root);
         while (treeSize < numNodes)
@@ -36,17 +33,16 @@ public class TreeNode {
         return root;
     }
 
-    // Inserts a given number into the BST
     void insertInteger(int data)
     {
-        if (this.idata == data)
+        if (this.data == data)
             return;
-        if (this.idata < data)
+        if (this.data < data)
         {
             if (this.right == null)
             {
                 this.right = new TreeNode();
-                this.right.idata = data;
+                this.right.data = data;
                 this.right.parent = this;
             }
             else
@@ -59,7 +55,7 @@ public class TreeNode {
             if (this.left == null)
             {
                 this.left = new TreeNode();
-                this.left.idata = data;
+                this.left.data = data;
                 this.left.parent = this;
             }
             else
@@ -70,7 +66,6 @@ public class TreeNode {
     }
 
 
-    /************ Actual functions that print the tree like a tree ********************/
     static void drawTree(TreeNode root)
     {
 
@@ -85,11 +80,10 @@ public class TreeNode {
         q.add(root.left);
         q.add(root.right);
 
-        // draw root first
         root.drawPos = (int)Math.pow(2, depth-1)*H_SPREAD;
         currDrawLevel = root.level;
         currSpaceCount = root.drawPos;
-        System.out.print(getSpace(root.drawPos) + root.idata);
+        System.out.print(getSpace(root.drawPos) + root.data);
 
         while (!q.isEmpty())
         {
@@ -158,7 +152,7 @@ public class TreeNode {
             }
         }
         int offset=0;
-        int numDigits = (int)Math.ceil(Math.log10(ele.idata));
+        int numDigits = (int)Math.ceil(Math.log10(ele.data));
         if (ele.parent.left == ele)
         {
             ele.drawPos = ele.parent.drawPos - H_SPREAD*(depth-currDrawLevel+1);
@@ -172,17 +166,15 @@ public class TreeNode {
             offset -= numDigits;
         }
 
-        System.out.print (getSpace(ele.drawPos - currSpaceCount + offset) + ele.idata);
+        System.out.print (getSpace(ele.drawPos - currSpaceCount + offset) + ele.data);
         currSpaceCount = ele.drawPos + numDigits/2;
     }
 
-
-    // Utility functions
     public void inOrderInteger (String sep)
     {
         if (left != null)
             left.inOrderInteger(sep);
-        System.out.print(idata + sep);
+        System.out.print(data + sep);
         if (right != null)
             right.inOrderInteger(sep);
     }

@@ -36,6 +36,15 @@ public class Main {
         }
     }
 
+    public static TreeNode search(TreeNode root, int key){
+        if (root == null || key == root.data)
+            return root;
+        if (key < root.data)
+            return search(root.left, key);
+        else
+            return search(root.right, key);
+    }
+
     public static void main(String[] args)
     {
         TreeNode root = TreeNode.createRandomIntegerTree(14);
@@ -44,6 +53,9 @@ public class Main {
         TreeNode.drawTree (root);
 
         printPostorder(root);
+
+        System.out.println();
+        System.out.print(search(root, 1));
     }
 
 

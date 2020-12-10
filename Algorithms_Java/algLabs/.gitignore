@@ -9,3 +9,4 @@ target/
 
 *.pages
 
+src/main/resources/search_result.txt

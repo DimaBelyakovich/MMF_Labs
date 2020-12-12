@@ -17,7 +17,7 @@ public class Vertex {
         this.edges.addAll(vertex.edges);
     }
 
-    public double getValue() {
+    public int getValue() {
         return value;
     }
 

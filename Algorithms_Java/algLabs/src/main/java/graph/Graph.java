@@ -85,26 +85,26 @@ public class Graph {
         return adjList;
     }
 
-    public boolean[][] toAdjacencyMatrix(){
-        boolean adjMatrix[][] = new boolean[this.vertexList.size()+1][this.vertexList.size()+1];
+    public byte[][] toAdjacencyMatrix(){
+        byte adjMatrix[][] = new byte[this.vertexList.size()+1][this.vertexList.size()+1];
 
-        for (boolean[] row: adjMatrix) {
-            Arrays.fill(row, false);
+        for (byte[] row: adjMatrix) {
+            Arrays.fill(row, (byte) 0);
         }
 
         for (Edge e: this.edgeList){
             int from = getVertexIndex(e.getFromVertex());
             int to = getVertexIndex(e.getToVertex());
 
-            adjMatrix[from][to] = true;
-            adjMatrix[to][from] = true;
+            adjMatrix[from][to] = 1;
+            adjMatrix[to][from] = 1;
         }
 
         return adjMatrix;
     }
 
     public void printAdjacencyMatrix(){
-        boolean[][] am = this.toAdjacencyMatrix();
+        byte[][] am = this.toAdjacencyMatrix();
         for (int i = 0; i < this.getVertexList().size(); i++) {
             for (int j = 0; j < this.getVertexList().size(); j++) {
                 System.out.print(am[i][j] + " ");

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GraphTests {
+    public Graph graph;
 
     @Test
     public void testVertex() {
@@ -49,10 +50,10 @@ public class GraphTests {
         edges.add(new Edge(8,v1,v5));
         edges.add(new Edge(6,v5,v3));
 
-        Graph graph = new Graph(vertices,edges);
-        Graph clone = new Graph(graph);
+        this.graph = new Graph(vertices,edges);
+        Graph clone = new Graph(this.graph);
 
-        Assert.assertTrue( graph.equals(clone));
-        Assert.assertTrue( graph.hashCode()==clone.hashCode());
+        Assert.assertTrue(this.graph.equals(clone));
+        Assert.assertTrue( this.graph.hashCode()==clone.hashCode());
     }
 }

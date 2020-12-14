@@ -1,5 +1,7 @@
 package graph;
 
+import graph.algorithms.DepthFirstTraversal;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,19 +36,26 @@ public class Main {
         graph.addEdge(new Edge(1, new Vertex(6), v5));
         graph.printAdjacencyMatrix();
         System.out.println();
+        System.out.println(graph.getEdgeList());
 
         graph.addEdge(new Edge(1, new Vertex(6), v1));
         graph.printAdjacencyMatrix();
         System.out.println();
+        System.out.println(graph.getEdgeList());
 
         graph.removeEdge(new Edge(1, new Vertex(6), v1));
         graph.printAdjacencyMatrix();
         System.out.println();
+        System.out.println(graph.getEdgeList());
 
         graph.removeVertex(new Vertex(6));
         graph.printAdjacencyMatrix();
         System.out.println();
 
         System.out.println(graph.getEdgeList());
+
+        for (int i: DepthFirstTraversal.depthFirstTraversal(graph.getVertexList().size(), graph.toAdjacencyMatrix(), 0)) {
+            System.out.println(i);
+        }
     }
 }

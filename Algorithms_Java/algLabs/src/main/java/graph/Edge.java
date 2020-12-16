@@ -92,4 +92,10 @@ public class Edge{
                 .append("[ ").append(to.getValue()).append("]").append(" = ").append(cost).append("\n");
         return builder.toString();
     }
+
+    public Edge addEdgeFromVertex(){
+        Edge edge = new Edge(new Edge(this.cost, this.from, this.to));
+        this.from.addEdge(edge);
+        return edge;
+    }
 }

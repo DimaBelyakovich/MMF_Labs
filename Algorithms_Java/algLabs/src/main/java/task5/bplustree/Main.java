@@ -32,7 +32,7 @@ public class Main {
                             List<String> res = tree.search(Double.parseDouble(input[1]));
                             String searchResult = "";
                             if (null == res) {
-                                System.out.println("f*ck you");
+                                System.out.println("kek");
                             } else {
                                 Iterator<String> valueIterator = res.iterator();
                                 while (valueIterator.hasNext()) {

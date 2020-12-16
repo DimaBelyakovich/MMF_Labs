@@ -3,7 +3,7 @@ package graph.algorithms;
 import java.util.Stack;
 
 public class DepthFirstTraversal {
-    //O(n^2)
+    //O(n+e) e - num of edges, n - num of vertex
     public static int[] depthFirstTraversal(int n, byte[][] adjacencyMatrix, int source){
         final int[] visited = new int[n];
         for (int i = 0; i < visited.length; i++)

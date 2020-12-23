@@ -5,3 +5,4 @@
 - [lab_5 - Danilevsky method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab5.m)<br>
 - [lab_6 - Power iteration](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab6.m)<br>
 - [lab_7 - Rotation method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab7.m)<br>
+- [lab_8 - Simple iteration method](https://github.com/DimaBelyakovich/MMF_Labs/blob/master/Numerical%20methods/lab8.m)<br>

@@ -79,7 +79,7 @@ public class Graph {
             int to = getVertexIndex(e.getToVertex());
 
             adjList.get(from).add(to);
-            adjList.get(to).add(from);
+            //adjList.get(to).add(from);
         }
 
         return adjList;

@@ -89,7 +89,7 @@ public class Edge{
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("[ ").append(from.getValue()).append("]").append(" -> ")
-                .append("[ ").append(to.getValue()).append("]").append(" = ").append(cost).append("\n");
+                .append("[ ").append(to.getValue()).append("]").append(" = ").append(cost);
         return builder.toString();
     }
 

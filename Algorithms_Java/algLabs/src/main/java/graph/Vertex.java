@@ -101,7 +101,7 @@ public class Vertex {
     @Override
     public String toString() {
         final StringBuilder builder = new StringBuilder();
-        builder.append("Value=").append(value).append("\n");
+        builder.append("\n");
         for (Edge e : edges)
             builder.append("\t").append(e.toString());
         return builder.toString();
